@@ -1,0 +1,118 @@
+CRITICAL - 2026-03-13 12:56:24 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: superadmin/upcoming-events]
+in APPPATH\Views\superadmin\upcoming_events.php on line 136.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/upcoming_events', [], true)
+ 4 APPPATH\Controllers\SuperAdmin.php(41): view('superadmin/upcoming_events', [...])
+ 5 APPPATH\Controllers\SuperAdmin.php(130): App\Controllers\SuperAdmin->renderView('superadmin/upcoming_events', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->upcoming_events()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-13 12:56:24 --> [Caused by] ErrorException: Undefined variable $birthdays
+in APPPATH\Views\superadmin\upcoming_events.php on line 136.
+ 1 APPPATH\Views\superadmin\upcoming_events.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $birthdays', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\upcoming_events.php', 136)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\upcoming_events.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/upcoming_events', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(41): view('superadmin/upcoming_events', [...])
+ 6 APPPATH\Controllers\SuperAdmin.php(130): App\Controllers\SuperAdmin->renderView('superadmin/upcoming_events', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->upcoming_events()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-13 12:57:32 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: superadmin/upcoming-events]
+in APPPATH\Views\superadmin\upcoming_events.php on line 175.
+ 1 APPPATH\Views\superadmin\upcoming_events.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\upcoming_events.php', 175)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\upcoming_events.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/upcoming_events', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(41): view('superadmin/upcoming_events', [...])
+ 6 APPPATH\Controllers\SuperAdmin.php(141): App\Controllers\SuperAdmin->renderView('superadmin/upcoming_events', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->upcoming_events()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-13 12:57:33 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: superadmin/upcoming-events]
+in APPPATH\Views\superadmin\upcoming_events.php on line 175.
+ 1 APPPATH\Views\superadmin\upcoming_events.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\upcoming_events.php', 175)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\upcoming_events.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/upcoming_events', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(41): view('superadmin/upcoming_events', [...])
+ 6 APPPATH\Controllers\SuperAdmin.php(141): App\Controllers\SuperAdmin->renderView('superadmin/upcoming_events', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->upcoming_events()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-13 12:57:33 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: superadmin/upcoming-events]
+in APPPATH\Views\superadmin\upcoming_events.php on line 175.
+ 1 APPPATH\Views\superadmin\upcoming_events.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\upcoming_events.php', 175)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\upcoming_events.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/upcoming_events', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(41): view('superadmin/upcoming_events', [...])
+ 6 APPPATH\Controllers\SuperAdmin.php(141): App\Controllers\SuperAdmin->renderView('superadmin/upcoming_events', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->upcoming_events()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-13 12:57:33 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: superadmin/upcoming-events]
+in APPPATH\Views\superadmin\upcoming_events.php on line 175.
+ 1 APPPATH\Views\superadmin\upcoming_events.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\upcoming_events.php', 175)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\upcoming_events.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/upcoming_events', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(41): view('superadmin/upcoming_events', [...])
+ 6 APPPATH\Controllers\SuperAdmin.php(141): App\Controllers\SuperAdmin->renderView('superadmin/upcoming_events', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->upcoming_events()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-13 12:57:34 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: superadmin/upcoming-events]
+in APPPATH\Views\superadmin\upcoming_events.php on line 175.
+ 1 APPPATH\Views\superadmin\upcoming_events.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\upcoming_events.php', 175)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\upcoming_events.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/upcoming_events', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(41): view('superadmin/upcoming_events', [...])
+ 6 APPPATH\Controllers\SuperAdmin.php(141): App\Controllers\SuperAdmin->renderView('superadmin/upcoming_events', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->upcoming_events()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-13 12:57:34 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: superadmin/upcoming-events]
+in APPPATH\Views\superadmin\upcoming_events.php on line 175.
+ 1 APPPATH\Views\superadmin\upcoming_events.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\upcoming_events.php', 175)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\upcoming_events.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/upcoming_events', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(41): view('superadmin/upcoming_events', [...])
+ 6 APPPATH\Controllers\SuperAdmin.php(141): App\Controllers\SuperAdmin->renderView('superadmin/upcoming_events', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->upcoming_events()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

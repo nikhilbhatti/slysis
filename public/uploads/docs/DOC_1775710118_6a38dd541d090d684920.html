@@ -1,0 +1,58 @@
+<?= $this->extend('layouts/admin_layout') ?>
+
+<?= $this->section('content') ?>
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 style="font-weight: 800; color: #1e293b;">🕒 System Activity Logs</h4>
+        <a href="<?= base_url('admin/activity/clear') ?>" class="btn btn-sm btn-outline-danger" onclick="return confirm('Clear all logs?')">🗑️ Clear Logs</a>
+    </div>
+
+    <?php if (session()->getFlashdata('success')): ?>
+        <div class="alert alert-success border-0 shadow-sm mb-3"><?= session()->getFlashdata('success') ?></div>
+    <?php endif; ?>
+
+    <div class="card border-0 shadow-sm" style="border-radius: 15px; overflow: hidden;">
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="bg-light">
+                    <tr>
+                        <th class="ps-4">User</th>
+                        <th>Role</th>
+                        <th>Action</th>
+                        <th>IP Address</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php if (!empty($logs) && is_array($logs)): ?>
+                        <?php foreach($logs as $log): ?>
+                        <tr>
+                            <td class="ps-4">
+                                <div class="fw-bold text-dark"><?= esc($log['user_name'] ?? 'Unknown User') ?></div>
+                                <small class="text-muted">ID: #<?= $log['user_id'] ?></small>
+                            </td>
+                            <td><span class="badge bg-soft-primary text-primary text-capitalize"><?= $log['role'] ?></span></td>
+                            <td class="text-secondary"><?= esc($log['action']) ?></td>
+                            <td><code class="small text-muted"><?= $log['ip_address'] ?></code></td>
+                            <td class="text-muted" style="font-size: 13px;"><?= date('d M Y, h:i A', strtotime($log['created_at'])) ?></td>
+                        </tr>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <tr>
+                            <td colspan="5" class="text-center py-5 text-muted">
+                                <i class="fas fa-info-circle mb-2" style="font-size: 24px;"></i><br>
+                                No activity logs found yet.
+                            </td>
+                        </tr>
+                    <?php endif; ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<style>
+    .bg-soft-primary { background-color: #e0e7ff; color: #4338ca; }
+    .table thead th { font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; padding: 15px 10px; }
+</style>
+<?= $this->endSection() ?>

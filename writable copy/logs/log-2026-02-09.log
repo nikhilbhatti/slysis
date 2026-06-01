@@ -1,0 +1,106 @@
+ERROR - 2026-02-09 12:09:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.`guardian_phone`, `/* ✅ Added */` `students`.`email`, `students`.`phone`, `ce' at line 1 in C:\wamp64\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `student...', 0)
+#1 C:\wamp64\www\ci4\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `student...')
+#2 C:\wamp64\www\ci4\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `student...')
+#3 C:\wamp64\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `student...', Array, false)
+#4 C:\wamp64\www\ci4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\ci4\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\ci4\app\Controllers\SuperAdmin.php(434): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\ci4\system\CodeIgniter.php(933): App\Controllers\SuperAdmin->allStudents()
+#8 C:\wamp64\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+#9 C:\wamp64\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\ci4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\ci4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\wamp64\www\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-02-09 12:09:53 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.`guardian_phone`, `/* ✅ Added */` `students`.`email`, `students`.`phone`, `ce' at line 1
+[Method: GET, Route: superadmin/all-students]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `students`.`id`, `students`.`student_name`, `students`.`father_name`, `/* ✅ Added */` `students`.`guardian_phone`, `/* ✅ Added */` `students`.`email`, `students`.`phone`, `centers`.`center_name`, `centers`.`center_code`, GROUP_CONCAT(courses.course_name SEPARATOR ", ") as courses
+FROM `students`
+LEFT JOIN `centers` ON `centers`.`id` = `students`.`center_id`
+LEFT JOIN `enrollments` ON `enrollments`.`student_id` = `students`.`id`
+LEFT JOIN `courses` ON `courses`.`id` = `enrollments`.`course_id`
+GROUP BY `students`.`id`
+ORDER BY `students`.`id` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\SuperAdmin.php(434): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->allStudents()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-09 12:09:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.`guardian_phone`, `/* ✅ Added */` `students`.`email`, `students`.`phone`, `ce' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `students`.`id`, `students`.`student_name`, `students`.`father_name`, `/* ✅ Added */` `students`.`guardian_phone`, `/* ✅ Added */` `students`.`email`, `students`.`phone`, `centers`.`center_name`, `centers`.`center_code`, GROUP_CONCAT(courses.course_name SEPARATOR ", ") as courses
+FROM `students`
+LEFT JOIN `centers` ON `centers`.`id` = `students`.`center_id`
+LEFT JOIN `enrollments` ON `enrollments`.`student_id` = `students`.`id`
+LEFT JOIN `courses` ON `courses`.`id` = `enrollments`.`course_id`
+GROUP BY `students`.`id`
+ORDER BY `students`.`id` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `students`.`id`, `students`.`student_name`, `students`.`father_name`, `/* ✅ Added */` `students`.`guardian_phone`, `/* ✅ Added */` `students`.`email`, `students`.`phone`, `centers`.`center_name`, `centers`.`center_code`, GROUP_CONCAT(courses.course_name SEPARATOR ", ") as courses
+FROM `students`
+LEFT JOIN `centers` ON `centers`.`id` = `students`.`center_id`
+LEFT JOIN `enrollments` ON `enrollments`.`student_id` = `students`.`id`
+LEFT JOIN `courses` ON `courses`.`id` = `enrollments`.`course_id`
+GROUP BY `students`.`id`
+ORDER BY `students`.`id` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `students`.`id`, `students`.`student_name`, `students`.`father_name`, `/* ✅ Added */` `students`.`guardian_phone`, `/* ✅ Added */` `students`.`email`, `students`.`phone`, `centers`.`center_name`, `centers`.`center_code`, GROUP_CONCAT(courses.course_name SEPARATOR ", ") as courses
+FROM `students`
+LEFT JOIN `centers` ON `centers`.`id` = `students`.`center_id`
+LEFT JOIN `enrollments` ON `enrollments`.`student_id` = `students`.`id`
+LEFT JOIN `courses` ON `courses`.`id` = `enrollments`.`course_id`
+GROUP BY `students`.`id`
+ORDER BY `students`.`id` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\SuperAdmin.php(434): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->allStudents()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-09 12:09:53 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.`guardian_phone`, `/* ✅ Added */` `students`.`email`, `students`.`phone`, `ce' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `students`.`id`, `students`.`student_name`, `students`.`father_name`, `/* ✅ Added */` `students`.`guardian_phone`, `/* ✅ Added */` `students`.`email`, `students`.`phone`, `centers`.`center_name`, `centers`.`center_code`, GROUP_CONCAT(courses.course_name SEPARATOR ", ") as courses
+FROM `students`
+LEFT JOIN `centers` ON `centers`.`id` = `students`.`center_id`
+LEFT JOIN `enrollments` ON `enrollments`.`student_id` = `students`.`id`
+LEFT JOIN `courses` ON `courses`.`id` = `enrollments`.`course_id`
+GROUP BY `students`.`id`
+ORDER BY `students`.`id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `students`.`id`, `students`.`student_name`, `students`.`father_name`, `/* ✅ Added */` `students`.`guardian_phone`, `/* ✅ Added */` `students`.`email`, `students`.`phone`, `centers`.`center_name`, `centers`.`center_code`, GROUP_CONCAT(courses.course_name SEPARATOR ", ") as courses
+FROM `students`
+LEFT JOIN `centers` ON `centers`.`id` = `students`.`center_id`
+LEFT JOIN `enrollments` ON `enrollments`.`student_id` = `students`.`id`
+LEFT JOIN `courses` ON `courses`.`id` = `enrollments`.`course_id`
+GROUP BY `students`.`id`
+ORDER BY `students`.`id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `students`.`id`, `students`.`student_name`, `students`.`father_name`, `/* ✅ Added */` `students`.`guardian_phone`, `/* ✅ Added */` `students`.`email`, `students`.`phone`, `centers`.`center_name`, `centers`.`center_code`, GROUP_CONCAT(courses.course_name SEPARATOR ", ") as courses
+FROM `students`
+LEFT JOIN `centers` ON `centers`.`id` = `students`.`center_id`
+LEFT JOIN `enrollments` ON `enrollments`.`student_id` = `students`.`id`
+LEFT JOIN `courses` ON `courses`.`id` = `enrollments`.`course_id`
+GROUP BY `students`.`id`
+ORDER BY `students`.`id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `students`.`id`, `students`.`student_name`, `students`.`father_name`, `/* ✅ Added */` `students`.`guardian_phone`, `/* ✅ Added */` `students`.`email`, `students`.`phone`, `centers`.`center_name`, `centers`.`center_code`, GROUP_CONCAT(courses.course_name SEPARATOR ", ") as courses
+FROM `students`
+LEFT JOIN `centers` ON `centers`.`id` = `students`.`center_id`
+LEFT JOIN `enrollments` ON `enrollments`.`student_id` = `students`.`id`
+LEFT JOIN `courses` ON `courses`.`id` = `enrollments`.`course_id`
+GROUP BY `students`.`id`
+ORDER BY `students`.`id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\SuperAdmin.php(434): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->allStudents()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

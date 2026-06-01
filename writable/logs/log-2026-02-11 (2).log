@@ -1,0 +1,250 @@
+CRITICAL - 2026-02-11 09:07:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "backend/superadmin/enrollments.php"
+[Method: GET, Route: superadmin/enrollments]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('backend/superadmin/enrollments.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backend/superadmin/enrollments', [], true)
+ 3 APPPATH\Controllers\SuperAdmin.php(391): view('backend/superadmin/enrollments', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:09:16 --> ErrorException: Undefined variable $centers
+[Method: GET, Route: superadmin/enrollments]
+in APPPATH\Views\superadmin\enrollments.php on line 55.
+ 1 APPPATH\Views\superadmin\enrollments.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centers', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/enrollments', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(390): view('superadmin/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:09:17 --> ErrorException: Undefined variable $centers
+[Method: GET, Route: superadmin/enrollments]
+in APPPATH\Views\superadmin\enrollments.php on line 55.
+ 1 APPPATH\Views\superadmin\enrollments.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centers', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/enrollments', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(390): view('superadmin/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:09:17 --> ErrorException: Undefined variable $centers
+[Method: GET, Route: superadmin/enrollments]
+in APPPATH\Views\superadmin\enrollments.php on line 55.
+ 1 APPPATH\Views\superadmin\enrollments.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centers', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/enrollments', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(390): view('superadmin/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:09:18 --> ErrorException: Undefined variable $centers
+[Method: GET, Route: superadmin/enrollments]
+in APPPATH\Views\superadmin\enrollments.php on line 55.
+ 1 APPPATH\Views\superadmin\enrollments.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centers', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/enrollments', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(390): view('superadmin/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:09:18 --> ErrorException: Undefined variable $centers
+[Method: GET, Route: superadmin/enrollments]
+in APPPATH\Views\superadmin\enrollments.php on line 55.
+ 1 APPPATH\Views\superadmin\enrollments.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centers', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/enrollments', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(390): view('superadmin/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:09:18 --> ErrorException: Undefined variable $centers
+[Method: GET, Route: superadmin/enrollments]
+in APPPATH\Views\superadmin\enrollments.php on line 55.
+ 1 APPPATH\Views\superadmin\enrollments.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centers', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/enrollments', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(390): view('superadmin/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:09:18 --> ErrorException: Undefined variable $centers
+[Method: GET, Route: superadmin/enrollments]
+in APPPATH\Views\superadmin\enrollments.php on line 55.
+ 1 APPPATH\Views\superadmin\enrollments.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centers', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/enrollments', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(390): view('superadmin/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:09:18 --> ErrorException: Undefined variable $centers
+[Method: GET, Route: superadmin/enrollments]
+in APPPATH\Views\superadmin\enrollments.php on line 55.
+ 1 APPPATH\Views\superadmin\enrollments.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centers', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/enrollments', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(390): view('superadmin/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:09:19 --> ErrorException: Undefined variable $centers
+[Method: GET, Route: superadmin/enrollments]
+in APPPATH\Views\superadmin\enrollments.php on line 55.
+ 1 APPPATH\Views\superadmin\enrollments.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centers', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/enrollments', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(390): view('superadmin/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:09:19 --> ErrorException: Undefined variable $centers
+[Method: GET, Route: superadmin/enrollments]
+in APPPATH\Views\superadmin\enrollments.php on line 55.
+ 1 APPPATH\Views\superadmin\enrollments.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centers', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/enrollments', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(390): view('superadmin/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:09:19 --> ErrorException: Undefined variable $centers
+[Method: GET, Route: superadmin/enrollments]
+in APPPATH\Views\superadmin\enrollments.php on line 55.
+ 1 APPPATH\Views\superadmin\enrollments.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centers', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/enrollments', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(390): view('superadmin/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:09:20 --> ErrorException: Undefined variable $centers
+[Method: GET, Route: superadmin/enrollments]
+in APPPATH\Views\superadmin\enrollments.php on line 55.
+ 1 APPPATH\Views\superadmin\enrollments.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centers', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/enrollments', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(390): view('superadmin/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:09:21 --> ErrorException: Undefined variable $centers
+[Method: GET, Route: superadmin/enrollments]
+in APPPATH\Views\superadmin\enrollments.php on line 55.
+ 1 APPPATH\Views\superadmin\enrollments.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centers', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/enrollments', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(390): view('superadmin/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:09:22 --> ErrorException: Undefined variable $centers
+[Method: GET, Route: superadmin/enrollments]
+in APPPATH\Views\superadmin\enrollments.php on line 55.
+ 1 APPPATH\Views\superadmin\enrollments.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centers', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/enrollments', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(390): view('superadmin/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:10:28 --> ErrorException: Undefined variable $centers
+[Method: GET, Route: superadmin/enrollments]
+in APPPATH\Views\superadmin\enrollments.php on line 55.
+ 1 APPPATH\Views\superadmin\enrollments.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centers', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/enrollments', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(390): view('superadmin/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:10:29 --> ErrorException: Undefined variable $centers
+[Method: GET, Route: superadmin/enrollments]
+in APPPATH\Views\superadmin\enrollments.php on line 55.
+ 1 APPPATH\Views\superadmin\enrollments.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centers', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/enrollments', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(390): view('superadmin/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:10:37 --> ErrorException: Undefined variable $centers
+[Method: GET, Route: superadmin/enrollments]
+in APPPATH\Views\superadmin\enrollments.php on line 55.
+ 1 APPPATH\Views\superadmin\enrollments.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $centers', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/enrollments', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(390): view('superadmin/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

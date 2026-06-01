@@ -1,0 +1,122 @@
+ERROR - 2026-02-12 10:22:18 --> mysqli_sql_exception: Unknown column 'students.image' in 'field list' in C:\wamp64\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `student...', 0)
+#1 C:\wamp64\www\ci4\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `student...')
+#2 C:\wamp64\www\ci4\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `student...')
+#3 C:\wamp64\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `student...', Array, false)
+#4 C:\wamp64\www\ci4\app\Controllers\CenterDashboard.php(127): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\ci4\system\CodeIgniter.php(933): App\Controllers\CenterDashboard->index()
+#6 C:\wamp64\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CenterDashboard))
+#7 C:\wamp64\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\ci4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\ci4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\wamp64\www\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2026-02-12 10:22:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'students.image' in 'field list'
+[Method: GET, Route: center/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `students`.`id`, `students`.`student_name`, `students`.`enrollment_no`, `students`.`email`, `students`.`phone`, `students`.`image`, `students`.`created_at`, `enrollments`.`id` as `enrollment_id`, `enrollments`.`enroll_date`, `enrollments`.`status` as `enrollment_status`, `courses`.`course_name`, `courses`.`course_duration`, `courses`.`fee // ⚠️ IMPORTANT: courses`.`course_code HATAYA - kyunki table mein nahi` `hai`
+FROM `students`
+LEFT JOIN `enrollments` ON `enrollments`.`student_id` = `students`.`id`
+LEFT JOIN `courses` ON `courses`.`id` = `enrollments`.`course_id`
+WHERE `students`.`center_id` = :students.center_id:
+ORDER BY `enrollments`.`id` DESC, `students`.`id` DESC
+ LIMIT 5', [...], false)
+ 2 APPPATH\Controllers\CenterDashboard.php(127): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CenterDashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CenterDashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-12 10:22:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'students.image' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `students`.`id`, `students`.`student_name`, `students`.`enrollment_no`, `students`.`email`, `students`.`phone`, `students`.`image`, `students`.`created_at`, `enrollments`.`id` as `enrollment_id`, `enrollments`.`enroll_date`, `enrollments`.`status` as `enrollment_status`, `courses`.`course_name`, `courses`.`course_duration`, `courses`.`fee // ⚠️ IMPORTANT: courses`.`course_code HATAYA - kyunki table mein nahi` `hai`
+FROM `students`
+LEFT JOIN `enrollments` ON `enrollments`.`student_id` = `students`.`id`
+LEFT JOIN `courses` ON `courses`.`id` = `enrollments`.`course_id`
+WHERE `students`.`center_id` = \'5\'
+ORDER BY `enrollments`.`id` DESC, `students`.`id` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `students`.`id`, `students`.`student_name`, `students`.`enrollment_no`, `students`.`email`, `students`.`phone`, `students`.`image`, `students`.`created_at`, `enrollments`.`id` as `enrollment_id`, `enrollments`.`enroll_date`, `enrollments`.`status` as `enrollment_status`, `courses`.`course_name`, `courses`.`course_duration`, `courses`.`fee // ⚠️ IMPORTANT: courses`.`course_code HATAYA - kyunki table mein nahi` `hai`
+FROM `students`
+LEFT JOIN `enrollments` ON `enrollments`.`student_id` = `students`.`id`
+LEFT JOIN `courses` ON `courses`.`id` = `enrollments`.`course_id`
+WHERE `students`.`center_id` = \'5\'
+ORDER BY `enrollments`.`id` DESC, `students`.`id` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `students`.`id`, `students`.`student_name`, `students`.`enrollment_no`, `students`.`email`, `students`.`phone`, `students`.`image`, `students`.`created_at`, `enrollments`.`id` as `enrollment_id`, `enrollments`.`enroll_date`, `enrollments`.`status` as `enrollment_status`, `courses`.`course_name`, `courses`.`course_duration`, `courses`.`fee // ⚠️ IMPORTANT: courses`.`course_code HATAYA - kyunki table mein nahi` `hai`
+FROM `students`
+LEFT JOIN `enrollments` ON `enrollments`.`student_id` = `students`.`id`
+LEFT JOIN `courses` ON `courses`.`id` = `enrollments`.`course_id`
+WHERE `students`.`center_id` = :students.center_id:
+ORDER BY `enrollments`.`id` DESC, `students`.`id` DESC
+ LIMIT 5', [...], false)
+ 4 APPPATH\Controllers\CenterDashboard.php(127): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CenterDashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CenterDashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-12 10:22:18 --> [Caused by] mysqli_sql_exception: Unknown column 'students.image' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `students`.`id`, `students`.`student_name`, `students`.`enrollment_no`, `students`.`email`, `students`.`phone`, `students`.`image`, `students`.`created_at`, `enrollments`.`id` as `enrollment_id`, `enrollments`.`enroll_date`, `enrollments`.`status` as `enrollment_status`, `courses`.`course_name`, `courses`.`course_duration`, `courses`.`fee // ⚠️ IMPORTANT: courses`.`course_code HATAYA - kyunki table mein nahi` `hai`
+FROM `students`
+LEFT JOIN `enrollments` ON `enrollments`.`student_id` = `students`.`id`
+LEFT JOIN `courses` ON `courses`.`id` = `enrollments`.`course_id`
+WHERE `students`.`center_id` = \'5\'
+ORDER BY `enrollments`.`id` DESC, `students`.`id` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `students`.`id`, `students`.`student_name`, `students`.`enrollment_no`, `students`.`email`, `students`.`phone`, `students`.`image`, `students`.`created_at`, `enrollments`.`id` as `enrollment_id`, `enrollments`.`enroll_date`, `enrollments`.`status` as `enrollment_status`, `courses`.`course_name`, `courses`.`course_duration`, `courses`.`fee // ⚠️ IMPORTANT: courses`.`course_code HATAYA - kyunki table mein nahi` `hai`
+FROM `students`
+LEFT JOIN `enrollments` ON `enrollments`.`student_id` = `students`.`id`
+LEFT JOIN `courses` ON `courses`.`id` = `enrollments`.`course_id`
+WHERE `students`.`center_id` = \'5\'
+ORDER BY `enrollments`.`id` DESC, `students`.`id` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `students`.`id`, `students`.`student_name`, `students`.`enrollment_no`, `students`.`email`, `students`.`phone`, `students`.`image`, `students`.`created_at`, `enrollments`.`id` as `enrollment_id`, `enrollments`.`enroll_date`, `enrollments`.`status` as `enrollment_status`, `courses`.`course_name`, `courses`.`course_duration`, `courses`.`fee // ⚠️ IMPORTANT: courses`.`course_code HATAYA - kyunki table mein nahi` `hai`
+FROM `students`
+LEFT JOIN `enrollments` ON `enrollments`.`student_id` = `students`.`id`
+LEFT JOIN `courses` ON `courses`.`id` = `enrollments`.`course_id`
+WHERE `students`.`center_id` = \'5\'
+ORDER BY `enrollments`.`id` DESC, `students`.`id` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `students`.`id`, `students`.`student_name`, `students`.`enrollment_no`, `students`.`email`, `students`.`phone`, `students`.`image`, `students`.`created_at`, `enrollments`.`id` as `enrollment_id`, `enrollments`.`enroll_date`, `enrollments`.`status` as `enrollment_status`, `courses`.`course_name`, `courses`.`course_duration`, `courses`.`fee // ⚠️ IMPORTANT: courses`.`course_code HATAYA - kyunki table mein nahi` `hai`
+FROM `students`
+LEFT JOIN `enrollments` ON `enrollments`.`student_id` = `students`.`id`
+LEFT JOIN `courses` ON `courses`.`id` = `enrollments`.`course_id`
+WHERE `students`.`center_id` = :students.center_id:
+ORDER BY `enrollments`.`id` DESC, `students`.`id` DESC
+ LIMIT 5', [...], false)
+ 5 APPPATH\Controllers\CenterDashboard.php(127): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CenterDashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CenterDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-12 12:15:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "center/completed.php"
+[Method: GET, Route: center/completed]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('center/completed.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('center/completed', [], true)
+ 3 APPPATH\Controllers\CenterDashboard.php(147): view('center/completed', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CenterDashboard->completedStudents()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CenterDashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-12 12:15:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "center/in-progress.php"
+[Method: GET, Route: center/in-progress]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('center/in-progress.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('center/in-progress', [], true)
+ 3 APPPATH\Controllers\CenterDashboard.php(172): view('center/in-progress', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CenterDashboard->inProgressStudents()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CenterDashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

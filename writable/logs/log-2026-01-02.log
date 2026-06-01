@@ -1,0 +1,42 @@
+CRITICAL - 2026-01-02 11:51:16 --> ErrorException: Undefined variable $totalEnrollments
+[Method: GET, Route: superadmin/dashboard]
+in APPPATH\Views\superadmin\dashboard.php on line 50.
+ 1 APPPATH\Views\superadmin\dashboard.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalEnrollments', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\dashboard.php', 50)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/dashboard', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(41): view('superadmin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-02 11:52:14 --> ErrorException: Undefined variable $totalEnrollments
+[Method: GET, Route: superadmin/dashboard]
+in APPPATH\Views\superadmin\dashboard.php on line 50.
+ 1 APPPATH\Views\superadmin\dashboard.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalEnrollments', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\dashboard.php', 50)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/dashboard', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(41): view('superadmin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-01-02 11:52:26 --> ErrorException: Undefined variable $totalEnrollments
+[Method: GET, Route: superadmin/dashboard]
+in APPPATH\Views\superadmin\dashboard.php on line 50.
+ 1 APPPATH\Views\superadmin\dashboard.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalEnrollments', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\dashboard.php', 50)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/dashboard', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(41): view('superadmin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

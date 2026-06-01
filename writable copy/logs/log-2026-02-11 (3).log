@@ -1,0 +1,106 @@
+ERROR - 2026-02-11 07:06:20 --> mysqli_sql_exception: Unknown column 'enrollment_no' in 'where clause' in C:\wamp64\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\wamp64\www\ci4\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\wamp64\www\ci4\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\wamp64\www\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\wamp64\www\ci4\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\ci4\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('sly-@056-001', 'students.enroll...', Array)
+#6 C:\wamp64\www\ci4\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('sly-@056-001', 'students.enroll...', Array, NULL, 'enrollment_no')
+#7 C:\wamp64\www\ci4\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('enrollment_no', 'enrollment_no', 'sly-@056-001', Array, Array, 'enrollment_no')
+#8 C:\wamp64\www\ci4\system\Controller.php(138): CodeIgniter\Validation\Validation->run()
+#9 C:\wamp64\www\ci4\app\Controllers\CenterDashboard.php(218): CodeIgniter\Controller->validate(Array)
+#10 C:\wamp64\www\ci4\system\CodeIgniter.php(933): App\Controllers\CenterDashboard->saveStudent()
+#11 C:\wamp64\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CenterDashboard))
+#12 C:\wamp64\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\wamp64\www\ci4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#14 C:\wamp64\www\ci4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 C:\wamp64\www\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 {main}
+CRITICAL - 2026-02-11 07:06:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'enrollment_no' in 'where clause'
+[Method: POST, Route: center/save-student]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `students`
+WHERE `enrollment_no` = :enrollment_no:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('sly-@056-001', 'students.enrollment_no', [...])
+ 4 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('sly-@056-001', 'students.enrollment_no', [...], null, 'enrollment_no')
+ 5 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('enrollment_no', 'enrollment_no', 'sly-@056-001', [...], [...], 'enrollment_no')
+ 6 SYSTEMPATH\Controller.php(138): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\CenterDashboard.php(218): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CenterDashboard->saveStudent()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CenterDashboard))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 07:06:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'enrollment_no' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `students`
+WHERE `enrollment_no` = \'sly-@056-001\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `students`
+WHERE `enrollment_no` = \'sly-@056-001\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `students`
+WHERE `enrollment_no` = :enrollment_no:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('sly-@056-001', 'students.enrollment_no', [...])
+ 6 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('sly-@056-001', 'students.enrollment_no', [...], null, 'enrollment_no')
+ 7 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('enrollment_no', 'enrollment_no', 'sly-@056-001', [...], [...], 'enrollment_no')
+ 8 SYSTEMPATH\Controller.php(138): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\CenterDashboard.php(218): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CenterDashboard->saveStudent()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CenterDashboard))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 07:06:20 --> [Caused by] mysqli_sql_exception: Unknown column 'enrollment_no' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT 1
+FROM `students`
+WHERE `enrollment_no` = \'sly-@056-001\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `students`
+WHERE `enrollment_no` = \'sly-@056-001\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `students`
+WHERE `enrollment_no` = \'sly-@056-001\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `students`
+WHERE `enrollment_no` = :enrollment_no:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('sly-@056-001', 'students.enrollment_no', [...])
+ 7 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('sly-@056-001', 'students.enrollment_no', [...], null, 'enrollment_no')
+ 8 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('enrollment_no', 'enrollment_no', 'sly-@056-001', [...], [...], 'enrollment_no')
+ 9 SYSTEMPATH\Controller.php(138): CodeIgniter\Validation\Validation->run()
+10 APPPATH\Controllers\CenterDashboard.php(218): CodeIgniter\Controller->validate([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CenterDashboard->saveStudent()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CenterDashboard))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 09:07:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "backend/superadmin/enrollments.php"
+[Method: GET, Route: superadmin/enrollments]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('backend/superadmin/enrollments.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backend/superadmin/enrollments', [], true)
+ 3 APPPATH\Controllers\SuperAdmin.php(391): view('backend/superadmin/enrollments', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->enrollments()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

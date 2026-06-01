@@ -1,0 +1,48 @@
+CRITICAL - 2026-03-16 05:39:31 --> Error: Call to undefined method CodeIgniter\Email\Email::setSMTPTimeout()
+[Method: POST, Route: superadmin/send-custom-mail]
+in APPPATH\Controllers\SuperAdmin.php on line 1101.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->send_custom_mail()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-16 05:40:50 --> Error: Call to undefined method CodeIgniter\Email\Email::setSMTPTimeout()
+[Method: POST, Route: superadmin/send-custom-mail]
+in APPPATH\Controllers\SuperAdmin.php on line 1101.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->send_custom_mail()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-16 09:22:11 --> ErrorException: Undefined array key "relation_type"
+[Method: GET, Route: superadmin/all-students]
+in APPPATH\Views\superadmin\all-students.php on line 168.
+ 1 APPPATH\Views\superadmin\all-students.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "relation_type"', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\all-students.php', 168)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\all-students.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/all-students', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(41): view('superadmin/all-students', [...])
+ 6 APPPATH\Controllers\SuperAdmin.php(632): App\Controllers\SuperAdmin->renderView('superadmin/all-students', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->allStudents()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-16 09:22:15 --> ErrorException: Undefined array key "relation_type"
+[Method: GET, Route: superadmin/all-students]
+in APPPATH\Views\superadmin\all-students.php on line 168.
+ 1 APPPATH\Views\superadmin\all-students.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "relation_type"', 'C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\all-students.php', 168)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\superadmin\\all-students.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/all-students', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(41): view('superadmin/all-students', [...])
+ 6 APPPATH\Controllers\SuperAdmin.php(632): App\Controllers\SuperAdmin->renderView('superadmin/all-students', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->allStudents()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

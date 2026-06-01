@@ -1,0 +1,70 @@
+ERROR - 2026-02-11 12:34:48 --> mysqli_sql_exception: Unknown column 'photo' in 'field list' in C:\wamp64\www\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `student...', 0)
+#1 C:\wamp64\www\ci4\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `student...')
+#2 C:\wamp64\www\ci4\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `student...')
+#3 C:\wamp64\www\ci4\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `student...', Array, false)
+#4 C:\wamp64\www\ci4\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\wamp64\www\ci4\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\wamp64\www\ci4\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\wamp64\www\ci4\app\Controllers\CenterDashboard.php(308): CodeIgniter\Model->update('25', Array)
+#8 C:\wamp64\www\ci4\system\CodeIgniter.php(933): App\Controllers\CenterDashboard->updateStudent('25')
+#9 C:\wamp64\www\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CenterDashboard))
+#10 C:\wamp64\www\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\ci4\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\wamp64\www\ci4\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\wamp64\www\ci4\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2026-02-11 12:34:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'photo' in 'field list'
+[Method: POST, Route: center/update-student/25]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `students` SET `student_name` = :student_name:, `photo` = :photo:
+WHERE `students`.`id` IN :students.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1025): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(860): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\CenterDashboard.php(308): CodeIgniter\Model->update('25', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CenterDashboard->updateStudent('25')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CenterDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 12:34:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'photo' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `students` SET `student_name` = \'amit kumar\', `photo` = \'1770813288_a9698ad477732a65836a.jpg\'
+WHERE `students`.`id` IN (\'25\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `students` SET `student_name` = \'amit kumar\', `photo` = \'1770813288_a9698ad477732a65836a.jpg\'
+WHERE `students`.`id` IN (\'25\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `students` SET `student_name` = :student_name:, `photo` = :photo:
+WHERE `students`.`id` IN :students.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1025): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(860): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\CenterDashboard.php(308): CodeIgniter\Model->update('25', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CenterDashboard->updateStudent('25')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CenterDashboard))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-02-11 12:34:48 --> [Caused by] mysqli_sql_exception: Unknown column 'photo' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `students` SET `student_name` = \'amit kumar\', `photo` = \'1770813288_a9698ad477732a65836a.jpg\'
+WHERE `students`.`id` IN (\'25\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `students` SET `student_name` = \'amit kumar\', `photo` = \'1770813288_a9698ad477732a65836a.jpg\'
+WHERE `students`.`id` IN (\'25\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `students` SET `student_name` = \'amit kumar\', `photo` = \'1770813288_a9698ad477732a65836a.jpg\'
+WHERE `students`.`id` IN (\'25\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `students` SET `student_name` = :student_name:, `photo` = :photo:
+WHERE `students`.`id` IN :students.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1025): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(860): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\CenterDashboard.php(308): CodeIgniter\Model->update('25', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CenterDashboard->updateStudent('25')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CenterDashboard))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

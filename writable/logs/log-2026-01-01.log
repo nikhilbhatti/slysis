@@ -1,0 +1,14 @@
+CRITICAL - 2026-01-01 11:35:11 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: center/enrollments]
+in APPPATH\Views\center\enrollments.php on line 28.
+ 1 APPPATH\Views\center\enrollments.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\wamp64\\www\\ci4\\app\\Views\\center\\enrollments.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\ci4\\app\\Views\\center\\enrollments.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('center/enrollments', [], true)
+ 5 APPPATH\Controllers\CenterDashboard.php(166): view('center/enrollments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CenterDashboard->enrollments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CenterDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

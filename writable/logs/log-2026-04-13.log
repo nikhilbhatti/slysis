@@ -1,0 +1,13 @@
+CRITICAL - 2026-04-13 10:30:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "superadmin/edit_student.php"
+[Method: GET, Route: superadmin/edit-student/37]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('superadmin/edit_student.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('superadmin/edit_student', [], true)
+ 3 APPPATH\Controllers\SuperAdmin.php(41): view('superadmin/edit_student', [...])
+ 4 APPPATH\Controllers\SuperAdmin.php(860): App\Controllers\SuperAdmin->renderView('superadmin/edit_student', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SuperAdmin->editStudent('37')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
